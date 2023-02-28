@@ -7,7 +7,7 @@ import jakarta.persistence.Table;
 import jakarta.persistence.criteria.CriteriaBuilder;
 
 @Entity
-@Table (name= "Televisions")
+@Table(name = "Televisions")
 public class Television {
 
 
@@ -35,16 +35,19 @@ public class Television {
 
     //constructor
 
-    public Television(){};
+    public Television() {
+    }
+
+    ;
 
     public Television(String type, String brand, double price, double availableSize, double refreshRate, String screenType, String screenQuality, boolean smartTv, boolean wifi, boolean voiceControl, boolean hdr, boolean bluetooth,
-                      boolean ambiLight, Integer originalStock, Integer sold){
+                      boolean ambiLight, Integer originalStock, Integer sold) {
         this.type = type;
         this.brand = brand;
         this.price = price;
         this.availableSize = availableSize;
         this.refreshRate = refreshRate;
-        this. screenType = screenType;
+        this.screenType = screenType;
         this.screenQuality = screenQuality;
         this.smartTv = smartTv;
         this.wifi = wifi;
@@ -173,11 +176,11 @@ public class Television {
     }
 
     public Integer getOriginalStock() {
-        return OriginalStock;
+        return originalStock;
     }
 
     public void setOriginalStock(Integer originalStock) {
-        OriginalStock = originalStock;
+        originalStock = originalStock;
     }
 
     public Integer getSold() {
